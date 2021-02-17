@@ -5,7 +5,9 @@
     
    - **VHDL code original format of f(c,b,a)** 
 
-https://www.edaplayground.com/x/kvka
+     https://www.edaplayground.com/x/kvka
+   
+![Screenshot 1](C:\Users\egeme\Digital-electronics-1\Labs\01-gates\original)
 
  
 
