@@ -1,6 +1,6 @@
 ## Lab Assigments
 
-**1. Vertification of De Morgan's laws of function** f(c,b,a)
+**1. Vertification of De Morgan's laws of function f(c,b,a)**
 
     
    - **VHDL code original format of f(c,b,a)** 
@@ -20,3 +20,9 @@ https://www.edaplayground.com/x/UiQ_
 https://www.edaplayground.com/x/8xaw
    
 ![Screenshot3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/NOR.PNG)
+
+
+**2. Verification of Distributive laws**
+
+   - **x.y + x.z = x.(y+z)**
+
