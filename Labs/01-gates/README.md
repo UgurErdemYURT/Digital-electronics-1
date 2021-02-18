@@ -21,7 +21,7 @@
 
     f_o <= ((not b_i) and a_i) or ((not c_i) and (not b_i));
    
-https://www.edaplayground.com/x/kvka
+(https://www.edaplayground.com/x/kvka)
    
 ![Screenshot1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/original.PNG)
  
@@ -31,7 +31,7 @@ https://www.edaplayground.com/x/kvka
 
     f_o <= ((not b_i) nand a_i) nand ((not c_i) nand (not b_i));
 
-https://www.edaplayground.com/x/UiQ_
+(https://www.edaplayground.com/x/UiQ_)
 
 ![Screenshot2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/NAND.PNG)
 
@@ -41,7 +41,7 @@ https://www.edaplayground.com/x/UiQ_
 
     f_o <= (b_i nor (not a_i)) or (c_i nor b_i);
 
-https://www.edaplayground.com/x/8xaw
+(https://www.edaplayground.com/x/8xaw)
    
 ![Screenshot3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/NOR.PNG)
 
@@ -61,7 +61,7 @@ https://www.edaplayground.com/x/8xaw
 	f2_right <= x_i or (y_i and z_i);
 
 
-https://www.edaplayground.com/x/fRRw
+(https://www.edaplayground.com/x/fRRw)
    
 ![Screenshot4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/distri.PNG)
 
