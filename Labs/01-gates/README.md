@@ -24,5 +24,7 @@ https://www.edaplayground.com/x/8xaw
 
 **2. Verification of Distributive laws**
 
-   - **x.y + x.z = x.(y+z)**
+![DistributiveLlaws](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/distributive1.png)
+
+
 
