@@ -28,6 +28,17 @@ https://www.edaplayground.com/x/8xaw
 
    - **VHDL code for Distributive Law** 
 
+   -VHDL Architecture-
+
+architecture dataflow of gates is
+begin
+    f1_left  <= (x_i and y_i) or (x_i and z_i);
+	f1_right <= x_i and (y_i or z_i);
+    
+    f2_left  <= (x_i or y_i) and (x_i or z_i);
+	f2_right <= x_i or (y_i and z_i);
+end architecture dataflow;
+
 https://www.edaplayground.com/x/fRRw
    
 ![Screenshot4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/distri.PNG)
