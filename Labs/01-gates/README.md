@@ -2,6 +2,8 @@
 
 **1. Vertification of De Morgan's laws of function f(c,b,a)**
 
+![equations](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/01-gates/equations.png)
+
 | **c** | **b** |**a** | **f(c,b,a)** | **f_NAND(c,b,a)** | **f_NOR(c,b,a)** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 | 1 | 1 |
