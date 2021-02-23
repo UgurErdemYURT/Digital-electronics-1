@@ -47,7 +47,7 @@ Greater_SoP= (B1./A1)+(B0./A1./A0)+(B1.B0./A0)
 
 Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
 
-![2-Bit Binary Comparator](https://www.edaplayground.com/x/8URr)
+[2-Bit Binary Comparator EDA Playground](https://www.edaplayground.com/x/8URr)
 
 
 
