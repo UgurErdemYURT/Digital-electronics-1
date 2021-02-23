@@ -1,5 +1,7 @@
 ## Lab Assigments
 
+[My GitHub repository link.](https://github.com/UgurErdemYURT/Digital-electronics-1/tree/main/Labs)
+
   **1. Completed 2-bit comparator truth table**
 
 | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
