@@ -50,6 +50,17 @@ Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
 [2-Bit Binary Comparator EDA Playground](https://www.edaplayground.com/x/8URr)
 
 
+   ** 3.A 4-bit binary comparator.**
+
+  -**Architecture from design file:**
+
+    architecture Behavioral of comparator_4bit is
+    begin
+        B_less_A_o      <= '1' when (b_i < a_i) else '0';
+        B_greater_A_o   <= '1' when (b_i > a_i) else '0';
+        B_equals_A_o    <= '1' when (b_i = a_i) else '0';
+
+    end architecture Behavioral;
 
 
 
