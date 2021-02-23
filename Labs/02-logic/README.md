@@ -25,17 +25,32 @@
 
   - **Karnaugh maps for all three functions:**
 
-The K-map for the "equals" function is as follows:
+**The K-map for the "equals" function is as follows:**
 
 ![kmap-equals](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/kmap_equals.png)
 
-The K-map for the "greaters" function is as follows:
+**The K-map for the "greaters" function is as follows:**
 
 ![kmap-greaters](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/kmap_greaters.png)
 
-The K-map for the "less" function is as follows:
+**The K-map for the "less" function is as follows:**
 
 ![kmap-less](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/kmap_less.png)
+
+ - **Equations of simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function:**
+
+**Simplified SoP form of the "greater than" function**
+
+Greater_SoP= (B1./A1)+(B0./A1./A0)+(B1.B0./A0)
+
+**Simplified PoS form of the "less than" function**
+
+Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
+
+![2-Bit Binary Comparator](https://www.edaplayground.com/x/8URr)
+
+
+
 
 
 
