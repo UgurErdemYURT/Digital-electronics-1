@@ -138,6 +138,15 @@ Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
             wait;
         end process p_stimulus;
 
+**Simulator console output with one reported error:**
+
+![4-bit-console-1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/4-bit-console-1.PNG)
+
+**Simulation:**
+
+![4-bit-console](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/02-logic/Pictures/4-bit-console.PNG)
+
+[4-bit Binary Comparator with one reported error EDA Playground](https://www.edaplayground.com/x/gi2f)
 
 
 
