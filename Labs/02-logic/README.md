@@ -50,9 +50,9 @@ Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
 [2-Bit Binary Comparator EDA Playground](https://www.edaplayground.com/x/8URr)
 
 
-   ** 3.A 4-bit binary comparator.**
+   **3. A 4-bit binary comparator.**
 
-  -**Architecture from design file:**
+  - **VHDL architecture from design file:**
 
     architecture Behavioral of comparator_4bit is
     begin
@@ -61,6 +61,85 @@ Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
         B_equals_A_o    <= '1' when (b_i = a_i) else '0';
 
     end architecture Behavioral;
+    
+  - **VHDL stimulus process from testbench file:**
+  
+    p_stimulus : process
+    begin
+        -- Report a note at the beginning of stimulus process
+        report "Stimulus process started" severity note;
+
+
+        -- First test values
+        s_b <= "0000"; s_a <= "0000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0000, 0000" severity error;
+        
+     
+        s_b <= "0001"; s_a <= "0000"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0001, 0000" severity error;
+        
+		 s_b <= "1001"; s_a <= "1100"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1001, 1100" severity error;
+
+		 s_b <= "1101"; s_a <= "1101"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1101, 1101" severity error;
+        
+         s_b <= "0101"; s_a <= "1010"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0101, 1010" severity error;
+        
+         s_b <= "1111"; s_a <= "1110"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1111, 1110" severity error;
+        
+         s_b <= "1011"; s_a <= "1101"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1011, 1101" severity error;
+        
+         s_b <= "0101"; s_a <= "0101"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 0101, 0101" severity error;
+        
+         s_b <= "1011"; s_a <= "0010"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '1') and (s_B_equals_A = '0') and (s_B_less_A = '0'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1011, 0010" severity error;
+        
+         s_b <= "1001"; s_a <= "1011"; wait for 100 ns;
+        -- Expected output
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        -- If false, then report an error
+        report "Test failed for input combination: 1001, 1011" severity error;
+        
+
+        -- Report a note at the end of stimulus process
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+    
+
+
 
 
 
