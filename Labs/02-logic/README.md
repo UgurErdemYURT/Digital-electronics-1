@@ -55,7 +55,7 @@ Less_PoS = (A1+A0).(/B0+A1).(/B1+/B0).(/B1+A1).(/B1+A0)
    **3. A 4-bit binary comparator.**
 
   - **VHDL architecture from design file:**
-```
+```VHDL
 architecture Behavioral of comparator_4bit is
 begin
     B_less_A_o      <= '1' when (b_i < a_i) else '0';
@@ -66,7 +66,7 @@ end architecture Behavioral;
 ```
   - **VHDL stimulus process from testbench file:**
   
-  ```
+  ```VHDL
 p_stimulus : process
 begin
     -- Report a note at the beginning of stimulus process
