@@ -11,3 +11,13 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/multiplexer.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_mux_2bit_4to1.tcl
+close_sim
+launch_simulation
+source tb_mux_2bit_4to1.tcl
+close_sim
+launch_simulation
+source tb_mux_2bit_4to1.tcl

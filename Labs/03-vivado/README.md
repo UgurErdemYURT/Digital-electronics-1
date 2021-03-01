@@ -45,7 +45,6 @@ p_stimulus : process
         
     end process p_stimulus;     
 
-  - **VHDL stimulus process from testbench file:**
 ```
   
 
