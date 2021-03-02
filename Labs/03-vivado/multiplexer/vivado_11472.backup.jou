@@ -2,20 +2,23 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Mar  2 17:38:11 2021
-# Process ID: 14432
+# Start of session at: Mon Mar  1 21:32:27 2021
+# Process ID: 11472
 # Current directory: C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8508 C:\Users\egeme\Digital-electronics-1\Labs\03-vivado\multiplexer\multiplexer.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10776 C:\Users\egeme\Digital-electronics-1\Labs\03-vivado\multiplexer\multiplexer.xpr
 # Log file: C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/vivado.log
 # Journal file: C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/multiplexer.xpr
 update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
 launch_simulation
 source tb_mux_2bit_4to1.tcl
-file mkdir C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/multiplexer.srcs/constrs_1
-file mkdir C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/multiplexer.srcs/constrs_1/new
-close [ open C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/multiplexer.srcs/constrs_1/new/nexys-a7-50t.xdc w ]
-add_files -fileset constrs_1 C:/Users/egeme/Digital-electronics-1/Labs/03-vivado/multiplexer/multiplexer.srcs/constrs_1/new/nexys-a7-50t.xdc
+close_sim
+launch_simulation
+source tb_mux_2bit_4to1.tcl
+close_sim
+launch_simulation
+source tb_mux_2bit_4to1.tcl
 close_sim
