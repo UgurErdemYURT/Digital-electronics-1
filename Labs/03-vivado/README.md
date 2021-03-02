@@ -51,7 +51,7 @@ p_stimulus : process
  
 ![simulation_screenshot](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/simulation_screenshot.PNG)
 
-  **2. A Vivado tutorials:**
+  **3. A Vivado tutorials:**
   
   - **Project Creation**
   
@@ -89,7 +89,7 @@ p_stimulus : process
 
   - **Running Simulation**
 
-![running_simulation]()
+![running_simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/running_simulation.PNG)
 
   - **Adding XDC Constraints File**
 
