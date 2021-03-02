@@ -4,6 +4,8 @@
 
   **1. Figure or table with connection of 16 slide switches and 16 LEDs on Nexys A7 board.**
 
+![figure_of_connection](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/figure_1.PNG)
+
 
   **2. Two-bit wide 4-to-1 multiplexer.**
 
@@ -42,15 +44,59 @@ p_stimulus : process
         report "Stimulus process finished" severity note;
         wait;
         
-    end process p_stimulus;     
+    end process p_stimulus;
+```    
 
-```
+  - **Simulation Screenshot**
+ 
+![simulation_screenshot](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/simulation_screenshot.PNG)
+
+  **2. A Vivado tutorials:**
   
+  - **Project Creation**
+  
+![creating_project](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/creating_project.PNG)
 
+![creating_project_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/creating_project_1.PNG)
 
+![creating_project_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/creating_project_2.PNG)
 
+  - **Adding Source File**
 
+![adding_source_file](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file.PNG)
 
+![adding_source_file_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_1.PNG)
 
+![adding_source_file_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_2.PNG)
 
+![adding_source_file_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_3.PNG)
 
+![adding_source_file_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_4.PNG)
+
+![adding_source_file_5](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_5.PNG)
+
+  - **Adding Testbench File**
+
+![adding_testbench](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench.PNG)
+
+![adding_testbench_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_1.PNG)
+
+![adding_testbench_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_2.PNG)
+
+![adding_testbench_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_3.PNG)
+
+![adding_testbench_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_4.PNG)
+
+  - **Running Simulation**
+
+![running_simulation]()
+
+  - **Adding XDC Constraints File**
+
+![adding_constraints_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_1.PNG)
+
+![adding_constraints_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_2.PNG)
+
+![adding_constraints_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_3.PNG)
+
+![adding_constraints_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_4.PNG)
