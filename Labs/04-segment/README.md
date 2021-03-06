@@ -4,99 +4,70 @@
 
   **1. Figure or table with connection of 16 slide switches and 16 LEDs on Nexys A7 board.**
 
-![figure_of_connection](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/figure_1.PNG)
+![7-segment](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/04-segment/Pictures/7-segment.PNG)
+
+  - **Decoder truth table for common anode 7-segment display:**
+
+| **Hex** | **Inputs** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
+| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 1 | 0001 | 1 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 2 | 0010 | 0 | 0 | 1 | 0 | 0 | 1 | 0 |
+| 3 | 0011 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
+| 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 7 | 0111 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 9 | 1001 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| A | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
+| b | 1011 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| C | 1100 | 0 | 1 | 1 | 0 | 0 | 0 | 1 |
+| d | 1101 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
+| E | 1110 | 0 | 1 | 1 | 0 | 0 | 0 | 0 |
+| F | 1111 | 0 | 1 | 1 | 1 | 0 | 0 | 0 |
 
 
-  **2. Two-bit wide 4-to-1 multiplexer.**
+  **2. Seven-segment display decoder:**
 
   - **Listing of VHDL architecture**
 
-```VHDL
-architecture Behavioral of mux_2bit_4to1 is
-
-begin
-
-    f_o <= a_i when (sel_i ="00") else
-           b_i when (sel_i ="01") else
-           c_i when (sel_i ="10") else
-           d_i;
-           
-
-end architecture Behavioral;
-```
 
   - **Listing of VHDL stimulus process from testbench file:**
+   
 
-```VHDL
-p_stimulus : process
-    begin
-        -- Report a note at the beginning of stimulus process
-        report "Stimulus process started" severity note;
-
-
-        -- First test values
-        s_d <= "11"; s_c <= "10"; s_b <= "01"; s_a <= "00";
-        s_sel <= "00"; wait for 100 ns;
-        s_sel <= "01"; wait for 100 ns;
-        s_sel <= "10"; wait for 100 ns;
-        s_sel <= "11"; wait for 100 ns;
-        
-        report "Stimulus process finished" severity note;
-        wait;
-        
-    end process p_stimulus;
-```    
-
-  - **Simulation Screenshot**
+  - **Screenshot with simulated time waveforms:**
  
-![simulation_screenshot](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/simulation_screenshot.PNG)
+![simulation_screenshot]()
 
-  **3. A Vivado tutorials:**
+  - **Listing of VHDL code from source file top.vhd with 7-segment module instantiation:**
   
-  - **Project Creation**
+  **3. LED(7:4) indicators:**
   
-![creating_project](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/creating_project.PNG)
+  - **Truth table:**
 
-![creating_project_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/creating_project_1.PNG)
+| **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0000 |  |  |  |  |
+| 1 | 0001 |  |  |  |  |
+| 2 | 0010 |  |  |  |  |
+| 3 | 0011 |  |  |  |  |
+| 4 | 0100 |  |  |  |  |
+| 5 | 0101 |  |  |  |  |
+| 6 | 0110 |  |  |  |  |
+| 7 | 0111 |  |  |  |  |
+| 8 | 1000 |  |  |  |  |
+| 9 | 1001 |  |  |  |  |
+| A | 1010 |  |  |  |  |
+| b | 1011 |  |  |  |  |
+| C | 1100 |  |  |  |  |
+| d | 1101 |  |  |  |  |
+| E | 1110 |  |  |  |  |
+| F | 1111 |  |  |  |  |
+  
+  - **Listing of VHDL code for LEDs(7:4):**
 
-![creating_project_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/creating_project_2.PNG)
 
-  - **Adding Source File**
+  - **Screenshot with simulated time waveforms:**
 
-![adding_source_file](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file.PNG)
-
-![adding_source_file_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_1.PNG)
-
-![adding_source_file_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_2.PNG)
-
-![adding_source_file_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_3.PNG)
-
-![adding_source_file_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_4.PNG)
-
-![adding_source_file_5](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_source_file_5.PNG)
-
-  - **Adding Testbench File**
-
-![adding_testbench](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench.PNG)
-
-![adding_testbench_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_1.PNG)
-
-![adding_testbench_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_2.PNG)
-
-![adding_testbench_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_3.PNG)
-
-![adding_testbench_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_testbench_4.PNG)
-
-  - **Running Simulation**
-
-![running_simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/running_simulation.PNG)
-
-  - **Adding XDC Constraints File**
-
-![adding_constraints_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_1.PNG)
-
-![adding_constraints_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_2.PNG)
-
-![adding_constraints_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_3.PNG)
-
-![adding_constraints_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/03-vivado/pictures/adding_constraints_4.PNG)
+![simulation_screenshot_1]()
