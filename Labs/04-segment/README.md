@@ -165,7 +165,7 @@ begin
 
   - **Screenshot with simulated time waveforms:**
  
-![simulation_screenshot]()
+![simulation_screenshot](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/04-segment/Pictures/screenshot.PNG)
 
   - **Listing of VHDL code from source file top.vhd with 7-segment module instantiation:**
 
