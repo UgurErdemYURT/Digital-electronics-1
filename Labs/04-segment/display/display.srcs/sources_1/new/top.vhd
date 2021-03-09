@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 03/06/2021 02:07:39 PM
--- Design Name: 
--- Module Name: top - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -33,7 +12,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
     Port ( 
-           SW : in STD_LOGIC_VECTOR (3 downto 0); --input binary dataa
+           SW : in STD_LOGIC_VECTOR (3 downto 0); --input binary data
            CA : out STD_LOGIC; --cathod A
            CB : out STD_LOGIC; --cathod B
            CC : out STD_LOGIC; --cathod C
@@ -74,13 +53,34 @@ begin
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
     -- WRITE YOUR CODE HERE
     
-    -- Turn LED(5) on if input value is greater than "1001", ie 9
+    -- Turn LED(5) on if input value is greater than 9
     -- WRITE YOUR CODE HERE
-    
+    LED(5)  <= '1' when (SW = "1010") else  -- A (10)
+               '1' when (SW = "1011") else  -- B (11)
+               '1' when (SW = "1100") else  -- C (12)
+               '1' when (SW = "1101") else  -- D (13)
+               '1' when (SW = "1110") else  -- E (14)
+               '1' when (SW = "1111") else  -- F (15)
+               '0';
+
     -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
     -- WRITE YOUR CODE HERE
-    
+    LED(6)  <= '1' when (SW = "0001") else  -- 1
+               '1' when (SW = "0011") else  -- 3
+               '1' when (SW = "0101") else  -- 5
+               '1' when (SW = "0111") else  -- 7
+               '1' when (SW = "1001") else  -- 9
+               '1' when (SW = "1011") else  -- B (11)
+               '1' when (SW = "1101") else  -- D (13)
+               '1' when (SW = "1111") else  -- F (15)
+               '0';
+
     -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
     -- WRITE YOUR CODE HERE
+    LED(7)  <= '1' when (SW = "0001") else  -- 1
+               '1' when (SW = "0010") else  -- 2
+               '1' when (SW = "0100") else  -- 4
+               '1' when (SW = "1000") else  -- 8
+               '0';
 
 end architecture Behavioral;
