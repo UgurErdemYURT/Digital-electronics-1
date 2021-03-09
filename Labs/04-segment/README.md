@@ -450,4 +450,4 @@ end architecture Behavioral;
 
   - **Screenshot with simulated time waveforms:**
 
-![simulation_screenshot_1]()
+![simulation_screenshot_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/04-segment/Pictures/screenshot_2.PNG)
