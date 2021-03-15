@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 15 17:02:12 2021
+# Process ID: 14700
+# Current directory: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12880 C:\Users\egeme\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
+# Log file: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/vivado.log
+# Journal file: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/counter.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/counter.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 923.816 ; gain = 0.000
