@@ -96,7 +96,7 @@
 
   - **Screenshot with simulated time waveforms:**
   
-![]()
+![screenshot](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/05-counter/Pictures/screenshot.PNG)
   
   **3. LED(7:4) indicators:**
   
