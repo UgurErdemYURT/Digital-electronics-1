@@ -16,9 +16,6 @@ entity top is
            AN : out STD_LOGIC_VECTOR (7 downto 0));
 end top;
 
-------------------------------------------------------------------------
--- Architecture body for top level
-------------------------------------------------------------------------
 architecture Behavioral of top is
 
     -- Internal clock enable
