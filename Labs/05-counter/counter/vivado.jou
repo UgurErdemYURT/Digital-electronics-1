@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar 15 17:02:12 2021
-# Process ID: 14700
+# Start of session at: Tue Mar 16 14:23:29 2021
+# Process ID: 12100
 # Current directory: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12880 C:\Users\egeme\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9156 C:\Users\egeme\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
 # Log file: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/vivado.log
 # Journal file: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter\vivado.jou
 #-----------------------------------------------------------

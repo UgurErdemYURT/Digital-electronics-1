@@ -4,11 +4,11 @@ Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
 SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
 IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
 
-Process ID (PID): 14700
+Process ID (PID): 12100
 License: Customer
 Mode: GUI Mode
 
-Current time: 	Mon Mar 15 17:03:39 CET 2021
+Current time: 	Tue Mar 16 14:24:51 CET 2021
 Time zone: 	Central European Standard Time (Europe/Prague)
 
 OS: Windows 10
@@ -47,7 +47,7 @@ Vivado layouts directory: C:/Users/egeme/AppData/Roaming/Xilinx/Vivado/2020.2/da
 PlanAhead jar file location: 	D:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
 Vivado log file location: 	C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/vivado.log
 Vivado journal file location: 	C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/vivado.jou
-Engine tmp dir: 	C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/.Xil/Vivado-14700-UGERYU
+Engine tmp dir: 	C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/.Xil/Vivado-12100-UGERYU
 
 Xilinx Environment Variables
 ----------------------------
@@ -61,7 +61,7 @@ XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2020.2
 
 GUI allocated memory:	128 MB
 GUI max memory:		3,072 MB
-Engine allocated memory: 832 MB
+Engine allocated memory: 548 MB
 
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
@@ -74,7 +74,7 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // Opening Vivado Project: C:\Users\egeme\Digital-electronics-1\Labs\05-counter\counter\counter.xpr. Version: Vivado v2020.2 
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // Tcl Message: open_project C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/counter.xpr 
-// HMemoryUtils.trashcanNow. Engine heap size: 832 MB. GUI used memory: 54 MB. Current time: 3/15/21, 5:03:40 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 548 MB. GUI used memory: 53 MB. Current time: 3/16/21, 2:24:53 PM CET
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: FILE_SET_NEW
@@ -97,9 +97,9 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 68 MB (+68979kb) [00:00:36]
-// [Engine Memory]: 832 MB (+721009kb) [00:00:36]
-// [GUI Memory]: 87 MB (+16348kb) [00:00:36]
-// [GUI Memory]: 110 MB (+19496kb) [00:00:37]
-// WARNING: HEventQueue.dispatchEvent() is taking  4187 ms.
+// [GUI Memory]: 66 MB (+66320kb) [00:00:32]
+// [Engine Memory]: 607 MB (+484850kb) [00:00:32]
+// [GUI Memory]: 84 MB (+15932kb) [00:00:32]
+// [GUI Memory]: 107 MB (+19681kb) [00:00:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  3947 ms.
 // Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
