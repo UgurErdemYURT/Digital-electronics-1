@@ -4,7 +4,7 @@
 
   **1. Timing diagram figure for displaying value 3.142:**
 
-![]()
+![figure1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/figure1.PNG)
 
 
   **2. Display driver:**
