@@ -150,15 +150,12 @@ end architecture testbench;
 
 ```
 
-  - **Screenshot with simulated time waveforms:**
-  
-![]()
-  
+	
   **3. Eight-digit driver:**
   
   
   - **Image of the driver schematic:**
 
-![]()
+![figure2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/figure2.PNG)
 
 

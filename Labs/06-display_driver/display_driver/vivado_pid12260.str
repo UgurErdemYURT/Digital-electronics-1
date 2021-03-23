@@ -272,3 +272,38 @@ typeControlKey((HResource) null, "driver_7seg_4digits.vhd", 'c'); // bP
 // HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 74 MB. Current time: 3/23/21, 9:33:34 PM CET
 // Elapsed time: 483 seconds
 selectCodeEditor("driver_7seg_4digits.vhd", 25, 70); // bP
+// Elapsed time: 394 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_driver_7seg_4digits.vhd", 4); // m
+// Elapsed time: 35 seconds
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 169, 166); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 169, 234); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 330, 221); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 299, 326); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 658, 332); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 146, 284); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 655, 288); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 223, 243); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 452, 263); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 425, 214); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 370, 184); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 402, 136); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 424, 20); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 457, 121); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 179, 48); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 661, 184); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 408, 161); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 662, 114); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 274, 260); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 4, 168); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 245, 88); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 12, 69); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 9, 92); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 140, 34); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 272, 197); // bP
+selectCodeEditor("tb_driver_7seg_4digits.vhd", 292, 198); // bP
+typeControlKey((HResource) null, "tb_driver_7seg_4digits.vhd", 'c'); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 74 MB. Current time: 3/23/21, 10:03:34 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 72 MB. Current time: 3/23/21, 10:33:34 PM CET
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1682 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 72 MB. Current time: 3/23/21, 11:03:35 PM CET
