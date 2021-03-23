@@ -270,3 +270,5 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "driver_
 selectCodeEditor("driver_7seg_4digits.vhd", 1, 99); // bP
 typeControlKey((HResource) null, "driver_7seg_4digits.vhd", 'c'); // bP
 // HMemoryUtils.trashcanNow. Engine heap size: 564 MB. GUI used memory: 74 MB. Current time: 3/23/21, 9:33:34 PM CET
+// Elapsed time: 483 seconds
+selectCodeEditor("driver_7seg_4digits.vhd", 25, 70); // bP
