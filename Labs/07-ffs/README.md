@@ -2,160 +2,237 @@
 
 [My GitHub repository link.](https://github.com/UgurErdemYURT/Digital-electronics-1/tree/main/Labs)
 
-  **1. Timing diagram figure for displaying value 3.142:**
+  - **Characteristic equations and completed tables for D flip-flop:**
+  
+   | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
+   | :-: | :-: | :-: | :-: | :-- |
+   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 1 | d |
+   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 0 | d |
+   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | d |
+   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 1 | Forbidden |
+  
+  - **Characteristic equations and completed tables for JK flip-flop:**
+	
+   | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
+   | :-: | :-: | :-: | :-: | :-: | :-- |
+   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 0 | 0 | No change |
+   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 1 | 1 | No change |
+   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 0 | 0 | Reset |
+   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 1 | 0 | Reset |
+   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 0 | 1 | Set |
+   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | 1 | Set |
+   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 | 1 | Toggles |
+   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 1 | 0 | Toggles |
+	
+	
+  - **Characteristic equations and completed tables for T flip-flop:**
 
-![figure1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/figure1.PNG)
+   | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
+   | :-: | :-: | :-: | :-: | :-- |
+   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 0 | No change |
+   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 1 | No change |
+   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | Toggles |
+   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 | Toggles |
 
+  **2. D latch:**
 
-  **2. Display driver:**
-
-  - **Listing of VHDL code of the process p_mux with syntax highlighting:**
+  - **VHDL code listing of the process p_d_latch with syntax highlighting:**
 
 ```VHDL
 
-p_mux : process(s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
+	p_d_latch :process (en, d, arst)
     begin
-        case s_cnt is
-            when "11" =>
-                s_hex <= data3_i;
-                dp_o  <= dp_i(3);
-                dig_o <= "0111";
-
-            when "10" =>
-                s_hex <= data2_i;
-                dp_o  <= dp_i(2);
-                dig_o <= "1011";
-
-            when "01" =>
-                s_hex <= data1_i;
-                dp_o  <= dp_i(1);
-                dig_o <= "1101";
-
-            when others =>
-                s_hex <= data0_i;
-                dp_o  <= dp_i(0);
-                dig_o <= "1110";
-        end case;
-    end process p_mux;
-
-end architecture Behavioral;
+        if(arst ='1') then
+            q     <= '0';
+            q_bar <= '1';
+        
+        else if(en = '1') then
+            q     <= d;
+            q_bar <= not d;
+        end if;
+        end if;
+    end process p_d_latch;
 
 ```
 
 
-  - **Listing of VHDL testbench file tb_driver_7seg_4digits with syntax highlighting and asserts:**
+  - **Listing of VHDL reset and stimulus processes from the testbench tb_d_latch.vhd file with syntax highlighting and asserts:**
 
 ```VHDL
 
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity tb_driver_7seg_4digits is
-end entity tb_driver_7seg_4digits;
-
-architecture testbench of tb_driver_7seg_4digits is
-
-    -- Local constants
-    constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
-
-
-    signal s_clk_100MHz : std_logic;
-    signal s_reset      : std_logic;
- 
-    signal s_data0      : std_logic_vector(4 - 1 downto 0);
-    signal s_data1      : std_logic_vector(4 - 1 downto 0);
-    signal s_data2      : std_logic_vector(4 - 1 downto 0);
-    signal s_data3      : std_logic_vector(4 - 1 downto 0);
-    signal s_dpi        : std_logic_vector(4 - 1 downto 0);
-    signal s_dpo        : std_logic;
-    signal s_seg        : std_logic_vector(7 - 1 downto 0);
-    signal s_dig        : std_logic_vector(4 - 1 downto 0);
-    
-begin
-
-    uut_cnt : entity work.driver_7seg_4digits
-        port map(
-            clk       => s_clk_100MHz,
-            reset     => s_reset,
-            data0_i   => s_data0,
-            data1_i   => s_data1,
-            data2_i   => s_data2,
-            data3_i   => s_data3,
-            dp_i      => s_dpi,
-            dp_o      => s_dpo,
-            seg_o     => s_seg,
-            dig_O     => s_dig  
-        
-        );
-
-    p_clk_gen : process
-    begin
-        while now < 40 ms loop         
-            s_clk_100MHz <= '0';
-            wait for c_CLK_100MHZ_PERIOD / 2;
-            s_clk_100MHz <= '1';
-            wait for c_CLK_100MHZ_PERIOD / 2;
-        end loop;
-        wait;
-    end process p_clk_gen;
-
-    p_reset_gen : process
-    begin
-        s_reset <= '0';
-        wait for 17 ns;
-        
-        -- Reset activated
-        s_reset <= '1';
-        wait for 96 ns;
-
-        s_reset <= '0';
-        wait;
-    end process p_reset_gen;
-
-    p_stimulus : process
-    begin
-        report "Stimulus process started" severity note;
-        
-        wait for 100 ns;
-        
-        s_data3  <= "0011"; -- 3
-        s_dpi    <= "0111"; -- .
-        s_data2  <= "0001"; -- 1
-        s_data1  <= "0100"; -- 4
-        s_data0  <= "0010"; -- 2
-        
-        wait for 1 ms;
-        
-        assert ((s_dig = "0111") and (s_seg = "0000110") and (s_dpo = '0'))
-        report "Test failed for input: 3" severity error;
-        wait for 1 ms;
-        
-        assert ((s_dig = "1011") and (s_seg = "1001111") and (s_dpo = '1'))
-        report "Test failed for input: 1" severity error;
-        wait for 1 ms;
-        
-        assert ((s_dig = "1101") and (s_seg = "1001100") and (s_dpo = '1'))
-        report "Test failed for input: 4" severity error;
-        wait for 1 ms;
-        
-        assert ((s_dig = "1110") and (s_seg = "0010010") and (s_dpo = '1'))
-        report "Test failed for input: 2" severity error;
-        wait for 1 ms;     
-             
-        report "Stimulus process finished" severity note;
-        wait;
-    end process p_stimulus;
-   
-end architecture testbench; 
+	uut_d_latch : entity work.d_latch
+			port map(
+				en           => s_en,
+				d            => s_d,
+				arst         => s_arst,
+				q            => s_q,
+				q_bar        => s_qbar
+			);
+			
+	 p_stimulus : process
+		begin
+			-- Report a note at the beginning of stimulus process
+			report "Stimulus process started" severity note;
+			
+			s_en   <= '0';
+			s_d    <= '0';
+			s_arst <= '0';
+			wait for 26 ns;
+			
+			s_d    <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '0';
+			wait for 24 ns;
+			
+			s_d    <= '1';
+			wait for 22 ns;
+			
+			s_d    <= '0';
+			wait for 36 ns;
+			
+	 --------------------------------------------------Test enable        
+			
+			s_en   <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '0';
+			wait for 24 ns;
+			
+			s_d    <= '1';
+			wait for 22 ns;
+			
+			s_d    <= '0';
+			wait for 36 ns;
+			
+	--------------------------------------------------Test enable        
+			
+			s_en   <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '0';
+			wait for 24 ns;
+			
+			s_d    <= '1';
+			wait for 22 ns;
+			
+			s_d    <= '0';
+			wait for 36 ns;
+			
+			s_en   <= '0';
+			wait for 56 ns;
+	   
+	--------------------------------------------------Test reset       
+			
+			s_en   <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '1';
+			wait for 14 ns;
+			
+			s_arst    <= '1'; --reset activated
+			wait for 24 ns;
+			
+			s_d    <= '1';
+			wait for 22 ns;
+			
+			s_d    <= '0';
+			wait for 36 ns;
+			
+			s_arst    <= '0';
+			s_en   <= '0';
+			wait for 56 ns;
+			
+			s_d    <= '1';
+			wait for 14 ns;
+			
+			s_d    <= '0';
+			wait for 24 ns;
+			
+			s_d    <= '1';
+			wait for 22 ns;
+			
+			s_d    <= '0';
+			wait for 36 ns;
+			
+	   
+		end process p_stimulus;
 
 ```
+
+  - **Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entity must be verified.:**
 
 	
-  **3. Eight-digit driver:**
-  
-  
-  - **Image of the driver schematic:**
+  **3. Flip-flops:**
 
-![figure2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/06-display_driver/Pictures/figure2.PNG)
+  - **VHDL code listing of the processes p_d_ff_arst with syntax highlighting:**
+
+```VHDL
+
+    p_d_ff_arst : process (clk, arst)
+    begin
+        if(arst ='1') then
+            q     <= '0';
+            q_bar <= '1';
+        
+        elsif rising_edge(clk) then
+            q     <= d;
+            q_bar <= not d;
+        end if;
+      
+    end process p_d_ff_arst;
+```
+
+  - **VHDL code listing of the processes p_d_ff_rst with syntax highlighting:**
+
+
+  - **VHDL code listing of the processes p_jk_ff_rst with syntax highlighting:**
+
+```VHDL  
+	    p_jk_ff_rst : process (clk)
+    begin
+        if rising_edge(clk) then
+            q     <= '0';
+            q_bar <= '1';
+        
+        else
+            if( j= '0' and k= '0') then
+                s_q     <= s_q;
+                s_q_bar <= s_q_bar;  
+        else
+            if( j= '0' and k= '1') then
+                s_q     <= '1';
+                s_q_bar <= '1'; 
+        else
+            if( j= '1' and k= '0') then
+                s_q     <= '1';
+                s_q_bar <= '1';
+        else
+                s_q     <= not s_q;
+                s_q_bar <= not s_q_bar; 
+        end if; 
+        end if;
+        end if;         
+        end if;
+
+    
+    q     <= s_q;
+    q_bar <= s_q_bar;
+      
+    end process p_jk_ff_rst;
+``` 
+  - **VHDL code listing of the processes p_t_ff_rstt with syntax highlighting:**
+
+![]()  
+  
+  - **Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entities must be verified:**
+
+![ss1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/ss1.PNG)
 
 
