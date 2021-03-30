@@ -168,6 +168,7 @@
 
   - **Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entity must be verified.:**
 
+	![ss1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/ss1.PNG)
 	
   **3. Flip-flops:**
 
@@ -191,6 +192,21 @@
 
   - **VHDL code listing of the processes p_d_ff_rst with syntax highlighting:**
 
+```VHDL
+
+    p_d_ff_rst : process (clk)
+    begin
+        if(rst ='1') then
+            q     <= '0';
+            q_bar <= '1';
+        
+        elsif rising_edge(clk) then
+            q     <= d;
+            q_bar <= not d;
+        end if;
+      
+    end process p_d_ff_arst;
+```
 
   - **VHDL code listing of the processes p_jk_ff_rst with syntax highlighting:**
 
@@ -227,12 +243,27 @@
       
     end process p_jk_ff_rst;
 ``` 
-  - **VHDL code listing of the processes p_t_ff_rstt with syntax highlighting:**
+  - **VHDL code listing of the processes p_t_ff_rst with syntax highlighting:**
 
-![]()  
+```VHDL
+	process (clk) 
+	   begin
+		  if rising_edge(clk) then                 
+			 if rst='1' then   
+				q <= '0';
+				q_bar <= '0';
+			 elsif t='0' then
+				   q <= q;
+				   q_bar <= q_bar;
+				elsif t='1' then
+				   q<= not q;
+				   q_bar <= not q_bar;
+				end if;
+			 end if;
+		  end if;
+	   end process;
+```
   
-  - **Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entities must be verified:**
 
-![ss1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/07-ffs/Pictures/ss1.PNG)
 
 
