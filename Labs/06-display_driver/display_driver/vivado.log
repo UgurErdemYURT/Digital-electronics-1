@@ -63,3 +63,5 @@ ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl c
 ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
 launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 923.660 ; gain = 0.000
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 23 23:33:27 2021...
