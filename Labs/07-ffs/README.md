@@ -249,18 +249,18 @@
 	process (clk) 
 	   begin
 		  if rising_edge(clk) then                 
-			 if rst='1' then   
+			if rst='1' then   
 				q <= '0';
 				q_bar <= '0';
-			 elsif t='0' then
+			elsif t='0' then
 				   q <= q;
 				   q_bar <= q_bar;
-				elsif t='1' then
+			elsif t='1' then
 				   q<= not q;
 				   q_bar <= not q_bar;
-				end if;
-			 end if;
-		  end if;
+		end if;
+		end if;
+		end if;
 	   end process;
 ```
   
