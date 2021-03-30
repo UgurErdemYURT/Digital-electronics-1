@@ -6,33 +6,33 @@
   
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 1 | d |
-   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 0 | d |
-   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | d |
-   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 1 | Forbidden |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 0 | 1 | d |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 1 | 0 | d |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 0 | 1 | d |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 1 | 1 | Forbidden |
   
   - **Characteristic equations and completed tables for JK flip-flop:**
 	
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 0 | 0 | No change |
-   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 1 | 1 | No change |
-   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 0 | 0 | Reset |
-   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 1 | 0 | Reset |
-   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 0 | 1 | Set |
-   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | 1 | Set |
-   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 | 1 | Toggles |
-   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 1 | 0 | Toggles |
-	
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 0 | 0 | 0 | No change |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 0 | 1 | 1 | No change |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 1 | 0 | 0 | Reset |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 1 | 1 | 0 | Reset |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 0 | 0 | 1 | Set |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 0 | 1 | 1 | Set |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 1 | 0 | 1 | Toggles |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 1 | 1 | 0 | Toggles |
+	          
 	
   - **Characteristic equations and completed tables for T flip-flop:**
 
    | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
-   | ![rising](Images/eq_uparrow.png) | 0 | 0 | 0 | No change |
-   | ![rising](Images/eq_uparrow.png) | 0 | 1 | 1 | No change |
-   | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | Toggles |
-   | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 | Toggles |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 0 | 0 | No change |
+   | ![rising](Pictures/eq_uparrow.png) | 0 | 1 | 1 | No change |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 0 | 1 | Toggles |
+   | ![rising](Pictures/eq_uparrow.png) | 1 | 1 | 0 | Toggles |
 
   **2. D latch:**
 
