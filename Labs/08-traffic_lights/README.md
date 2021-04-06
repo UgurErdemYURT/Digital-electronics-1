@@ -13,10 +13,15 @@
   
   - **Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings:**
 	
-	![capture_1]()
+	![capture_1](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Images/capture_1.PNG)
 
-	![capture_2]()
+	![capture_2](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Images/capture_2.PNG)
 
+
+	| **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
+	| :-: | :-: | :-: | :-: | :-: |
+	| LD16 | N15, M16, R12 | `1,0,0` | `1,1,0` | `0,1,0` |
+	| LD17 | N16, R11, G14 | `1,0,0` | `1,1,0` | `0,1,0` |
 
   **2. Traffic light controller:**
 
