@@ -38,7 +38,6 @@
 
   - **Listing of VHDL code of combinatorial process p_output_fsm with syntax highlighting:**
 
-	![]()
 	
 	
   - **Screenshot(s) of the simulation, from which it is clear that controller works correctly:**
