@@ -27,7 +27,7 @@
 
   - **State diagram:**
 
-
+	![capture_3](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Images/capture_3.jpg)
 
   - **Listing of VHDL code of sequential process p_traffic_fsm with syntax highlighting:**
 
@@ -42,7 +42,7 @@
 	
   - **Screenshot(s) of the simulation, from which it is clear that controller works correctly:**
   
- 	![]()
+
  
 	
   **3. Smart controller:**
@@ -53,7 +53,7 @@
 
   - **State diagram:**
 
-
+ 	![capture_4](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/08-traffic_lights/Images/capture_4.jpg)
 
   - **Listing of VHDL code of sequential process p_smart_traffic_fsm with syntax highlighting:**
 
