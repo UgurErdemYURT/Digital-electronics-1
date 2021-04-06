@@ -49,7 +49,8 @@
 
   - **State table:**
 
-	| **Input** | **No Pedest** | **West_i** | **West_i** | **No Pedest** | **South_i** | **South_i** | **South_i AND West_i** | **South_i AND West_i** | **South_i AND West_i** |  
+	| **Input** | **No Pedest** | **West_i** | **West_i** | **No Pedest** | **South_i** | **South_i** | **South_i AND West_i** | **South_i AND West_i** | **South_i AND West_i** | 
+	| :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 	| **Delay** | 4 seconds | 1 second | 4 seconds | 4 second | 4 seconds | 1 second | 4 seconds | 1 second | 4 seconds | 1 second |
 	| **Date** | South_go | South_wait | West_go | West_go | West_go | West_wait | South_go | South_wait | West_go | West_wait |
 	| **Output** | S: Green; W: Red | S: Yellow; W: Red | S: Red; W: Green | S: Red; W: Green | S: Red; W: Green | S: Red; W: Yellow | S: Green; W: Red | S: Yellow; W: Red | S: Red; W: Green | S: Red; W: Yellow |
