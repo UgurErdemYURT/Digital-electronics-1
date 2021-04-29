@@ -1,7 +1,6 @@
 # **Parking assistant with HC-SR04 ultrasonic sensor, sound signaling using PWM, signaling by LED bargraph**
 
-
--------------------------------------------------------------------------------------------------------------
+	
 
 ## **Team members**
 Uğur Erdem Yurt, Francisca Campos, Henri Oru, Taavi Salum, Ana Sampaio.
@@ -18,7 +17,7 @@ Green LEDs show that the object is still far. Yellow LEDs show that the object i
 
 ### **Flowchart of the project**
 
-![Flowchart]()
+![Flowchart](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/Flowchart.png)
 
 ## **Hardware description**
 For FPGA board we are using Arty A7-35T because it has enough external ports for us to use. We also have external 2 layer PCB which we use. It connects straight on top of Arduino/chipKIT shield connectors (IO33 - IO26 and IO7 - IO0). We are using 13 external I/O pins of the shield connectors. Additional 3 external wires are required to connect from the FPGA board to external PCB and those are 5V0, GND and GND. There is also a possibility to get 3.3V on the external PCB by connecting 3V3 from FPGA board to external PCB 3V3 pin via external wire.
@@ -61,18 +60,18 @@ J1 | 5-103327-1 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch -
 J2 | 5-146254-8 | TE Connectivity | Header & Wire Housing, Through-hole, Pitch - 2.54mm, 16 position, 2 row, straight | https://www.mouser.ee/ProductDetail/TE-Connectivity/5-146254-8?qs=bwpFY26eRVeR6qljXzz%2FRg%3D%3D
 
 ### **Arty A7-35T from TOP side**
-![Arty A7-35T]()
+![Arty A7-35T](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/Arty_A7-35T.jpg)
 
 ### **External PCB Schematic**
-![External PCB Schemati]()
+![External PCB Schemati](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/External_PCB_Schematic.png)
 
 ### **External PCB 3D model from top side**
-![External PCB 3D model from top side]()
+![External PCB 3D model from top side](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/External_PCB_3D_TOP.png)
 
 Small disclaimer: the actual colours of the U3 (HDSP-4832 / LED bar) is different than in the picture because we couldn't find the correct 3D model. Starting from the bottom the first three LEDs are green, then four yellow LEDs and then three red LEDs.
 
 ### **External PCB 3D model from bottom side**
-![External PCB 3D model from bottom side]()
+![External PCB 3D model from bottom side](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/External_PCB_3D_BOT.png)
 
 
 
@@ -86,7 +85,7 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 
 
 ### **LED_decoder simulation**
-![LED_decoder simulation]()
+![LED_decoder simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/LED_decoder_simulation.png)
 
 
 ### **PWM module description**
