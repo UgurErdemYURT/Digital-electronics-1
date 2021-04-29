@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Apr 26 16:28:21 2021
-# Process ID: 17668
+# Start of session at: Wed Mar 17 13:57:07 2021
+# Process ID: 21580
 # Current directory: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14528 C:\Users\egeme\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17112 C:\Users\egeme\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
 # Log file: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter/vivado.log
 # Journal file: C:/Users/egeme/Digital-electronics-1/Labs/05-counter/counter\vivado.jou
 #-----------------------------------------------------------
@@ -17,7 +17,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1218.023 ; gain = 0.000
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 1000.688 ; gain = 0.000
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 26 17:03:39 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 17 14:56:51 2021...

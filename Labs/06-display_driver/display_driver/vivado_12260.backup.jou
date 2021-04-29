@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 23 17:31:13 2021
+# Process ID: 12260
+# Current directory: C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24088 C:\Users\egeme\Digital-electronics-1\Labs\06-display_driver\display_driver\display_driver.xpr
+# Log file: C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver/vivado.log
+# Journal file: C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd w ]
+add_files -fileset sim_1 C:/Users/egeme/Digital-electronics-1/Labs/06-display_driver/display_driver/display_driver.srcs/sim_1/new/tb_driver_7seg_4digits.vhd
+update_compile_order -fileset sim_1
+launch_simulation
