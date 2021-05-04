@@ -96,7 +96,7 @@ The signals are activated the same as LED_decoder, from ‘0001’ to ‘1010’
 
 
 ### **PWM simulation**
-![PWM simulation]()
+![PWM simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/PWM_simulation.png)
 
 
 ### **Ultrasonic sensor module description**
@@ -115,7 +115,7 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 
 
 ### **Ultrasonic sensor simulation**
-![Ultrasonic sensor simulation]()
+![Ultrasonic sensor simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/Ultrasonic_sensor_simulation.png)
 
 
 
