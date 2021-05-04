@@ -167,15 +167,16 @@ Top module includes all of the modules and behaves like one module. Every single
 
 ------------------------------------------------------------------------
 ## **References**
-1. 
-2. 
-3. 
-4. 
-5. 
-
-
-
-
+1. https://docs.broadcom.com/doc/AV02-1798EN
+2. https://github.com/tomas-fryza/Digital-electronics-1/tree/master/Labs/05-counter
+3. https://arduinomodules.info/ky-012-active-buzzer-module/
+4. https://www.instructables.com/Simple-Arduino-and-HC-SR04-Example/ 
+5. https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
+6. 
+7. 
+8. 
+9. 
+10. 
 
 
 
