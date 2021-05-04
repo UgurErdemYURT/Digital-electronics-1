@@ -5,6 +5,7 @@
 ## **Team members**
 Uğur Erdem Yurt, Francisca Campos, Henri Oru, Taavi Salum, Ana Sampaio.
 
+https://github.com/UgurErdemYURT/Digital-electronics-1/tree/main/Labs/project
 
 ## **Project objectives**
 Project objective is to make parking assistant using HC-SR04 ultrasonic sensor, using PWM for sound signaling and LED bargraph for visual signaling.  
