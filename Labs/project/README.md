@@ -129,18 +129,7 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 
 Top module includes all of the modules and behaves like one module. Every single module which is in top module is connected with top modules output and inputs. Top module's outputs represents the outputs of Arty A7-35T such as leds, buzzer and pulse generator. Top module's inputs represents the inputs of Arty A7-35T such as reset, ON/OFF switch and renge decoder. It has been ensured to work in harmony with declarations in constraint file. 
 
-
-### **TOP design simulation**
-![TOP design simulation]()
-
-### **Block diagram of final application**
-![Block diagram of final application]()
-
-
-
-
-
-
+When the Ultrasonic sensor reads a signal in its reading range with Ultrasonic sensor, it sends the signal to the Arty A7-35T development board. The development board then sends the signal forward to LED_decoder and PWM input. LED-s will turn on according to the given signal, same with the Buzzer. For example: If the Ultrasonic sensor detects the first range distance, which is ‘0001’, the Green1_o LED will turn on, the principle is the same with the Buzzer, if the first distance is detected it will give out the slowest “beeps” out of the ten settings it has. If the object is very close, Ultrasonic sensor will give out the ‘1010’ signal to LED_decoder and PWM, so all the LED-s will turn on and the Buzzer will go onto the fastest “beeping” setting.
 
 
 ------------------------------------------------------------------------
@@ -149,20 +138,12 @@ Top module includes all of the modules and behaves like one module. Every single
 
 
 
-
-
-
-
-
 ------------------------------------------------------------------------
 ## **Discussion of results**
 
+All the individual VHDL sub-projects came out nicely and worked well. But there is an issue in the projects Top testbench, everything matches and seems to work, every signal comes through but the Ultrasonic sensor ‘echo’ and ‘trigger’ signals are just not coming through and that causes the whole design to collapse.
 
-
-
-
-
-
+Overall the project was executed pretty well.
 
 
 
@@ -173,12 +154,6 @@ Top module includes all of the modules and behaves like one module. Every single
 3. https://arduinomodules.info/ky-012-active-buzzer-module/
 4. https://www.instructables.com/Simple-Arduino-and-HC-SR04-Example/ 
 5. https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
-6. 
-7. 
-8. 
-9. 
-10. 
-
 
 
 ------------------------------------------------------------------------
