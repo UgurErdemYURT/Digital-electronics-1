@@ -209,7 +209,7 @@ https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/To
 
 ------------------------------------------------------------------------
 ## **Video presentation**
-[![Video presentation](https://img.youtube.com/vi/VIDEO-ID/0.jpg)](http://www.youtube.com/watch?v=VIDEO-ID)
+![Video presentation](https://www.youtube.com/watch?v=eca_nk9R2iw&ab_channel=GrindestHenri)
 
 
 
