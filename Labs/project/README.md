@@ -89,6 +89,12 @@ LED_decoder module is made out of 1 input and 10 outputs. The input is a four bi
 ![LED_decoder simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/LED_decoder_simulation.png)
 
 
+### **Link to source file** 
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/LED_decoder.vhd
+
+### **Link to test testbench**
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_LED_decoder.vhd  
+
 ### **PWM module description**
 
 PWM module is made out of only one input and no outputs because it doesn’t need to give feedback, its only purpose is to make sound according to the signal received. The input is a 4bit signal which gives 10 output signals to the buzzer to make a sound according to the signal.
@@ -98,6 +104,61 @@ The signals are activated the same as LED_decoder, from ‘0001’ to ‘1010’
 
 ### **PWM simulation**
 ![PWM simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/PWM_simulation.png)
+
+### **Links to source files**
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/clock_enable.vhd  
+
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/cnt_up_down.vhd  
+
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_1.vhd  
+
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_2.vhd  
+
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_3.vhd  
+				   
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_4.vhd  
+				
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_5.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_6.vhd  
+		
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_7.vhd  
+				
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_8.vhd  
+		
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_9.vhd  
+				
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_10.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/PWM_KY012.vhd  
+
+
+### **Links to test testbenches**
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_clock_enable.vhd  
+		
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_cnt_up_down.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_1.vhd  
+		
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_2.vhd  
+	
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_3.vhd  
+		
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_4.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_5.vhd  
+				
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_6.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_7.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_8.vhd  
+				 
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_9.vhd  
+			
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_10.vhd  
+				
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_PWM_KY012.vhd  
 
 
 ### **Ultrasonic sensor module description**
@@ -118,6 +179,13 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 ### **Ultrasonic sensor simulation**
 ![Ultrasonic sensor simulation](https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/project/Pictures/Ultrasonic_sensor_simulation.png)
 
+### **Link to source file**
+
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/ultraSonic.vhd  
+
+
+### **Link to test testbench**
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_ultraSonic.vhd  
 
 
 
@@ -130,6 +198,13 @@ It has been thought that the range of distances covers from 10 cm to 1 m since i
 Top module includes all of the modules and behaves like one module. Every single module which is in top module is connected with top modules output and inputs. Top module's outputs represents the outputs of Arty A7-35T such as leds, buzzer and pulse generator. Top module's inputs represents the inputs of Arty A7-35T such as reset, ON/OFF switch and renge decoder. It has been ensured to work in harmony with declarations in constraint file. 
 
 When the Ultrasonic sensor reads a signal in its reading range with Ultrasonic sensor, it sends the signal to the Arty A7-35T development board. The development board then sends the signal forward to LED_decoder and PWM input. LED-s will turn on according to the given signal, same with the Buzzer. For example: If the Ultrasonic sensor detects the first range distance, which is ‘0001’, the Green1_o LED will turn on, the principle is the same with the Buzzer, if the first distance is detected it will give out the slowest “beeps” out of the ten settings it has. If the object is very close, Ultrasonic sensor will give out the ‘1010’ signal to LED_decoder and PWM, so all the LED-s will turn on and the Buzzer will go onto the fastest “beeping” setting.
+
+### **Link to source file**
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sources_1/new/Top_design.vhd  
+
+
+### **Link to test testbench**
+https://github.com/UgurErdemYURT/Digital-electronics-1/blob/main/Labs/Project/Top_Design_Ultrasonic_Sensor_Project/Top_Design_Ultrasonic_Sensor_Project.srcs/sim_1/new/tb_top_design.vhd 
 
 
 ------------------------------------------------------------------------
